@@ -3,7 +3,8 @@
 ----
 oxd-play-client is simple implementation of oxd-play library in playframe work.
 
-Application Setup
+##Application Setup
+---
 
 Prerequisite : Gluu server and oxd-server needs to be running in your machine
 
