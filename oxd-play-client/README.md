@@ -23,16 +23,16 @@ There is GlobalData class in .Global package where you can change various parame
 
 ---
 
-set lighttpd config file to set your local proxity for www.myappplay.com name resolving.
+    set lighttpd config file to set your local proxity for www.myappplay.com name resolving.
 
-server.modules = (
+    server.modules = (
       "mod_access",
       "mod_proxy",
       "mod_accesslog"
 )
 
 
-$HTTP["host"] =~ "www.myappplay.com" {
+    $HTTP["host"] =~ "www.myappplay.com" {
     proxy.balance = "round-robin" proxy.server = ( "/" =>
         ( ( "host" => "you ip address", "port" => 9005 ) ) )
 }
