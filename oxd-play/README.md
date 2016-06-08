@@ -31,7 +31,9 @@ You can install oxd-play by adding following line in build.sbt :
 ## How to use: 
 
 ---
+
 >1 **Import Oxd-Command class** (all are static methods of "oxdCommands" class.) 
+
 ---
 
     import static org.xdi.oxd.client.oxdCommands.*;
@@ -39,6 +41,7 @@ You can install oxd-play by adding following line in build.sbt :
 ---
 
 >2 **register_site**
+
 ---
 1 - create registerSiteParams
 
@@ -63,10 +66,12 @@ You can install oxd-play by adding following line in build.sbt :
                     }
                 });
 
-***host - oxd-server host eg.localhost or 127.0.0.1  
-          port - oxd-server listing port (default port is 8099)***
+***host - oxd-server host eg.localhost or 127.0.0.1 port - oxd-server listing port (default port is 8099)***
+
 ---
+
 >3 **update_site__registration**
+
 ---
    1- create UpdateSiteParams
 
@@ -91,7 +96,9 @@ You can install oxd-play by adding following line in build.sbt :
         });
 
 ---
+
 >4 **get_authorization_url**
+
 ---
 1- create GetAuthorizationUrlParams
 
@@ -174,6 +181,7 @@ You can install oxd-play by adding following line in build.sbt :
             });
 
 ---
+
 >7 **Getlogouturi**
 
 ---
