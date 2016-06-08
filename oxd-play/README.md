@@ -187,7 +187,7 @@ You can install oxd-play by adding following line in build.sbt :
         getLogoutUri(host, port, getLogoutUrlParams, new GetlogoutUrlCallback() {
             @Override
             public void success(LogoutResponse AlogoutResponse) {
-                Application.logoutResponse = AlogoutResponse;//successful  call will return LogoutResponse
+                //successful  call will return LogoutResponse
             }
 
             @Override
