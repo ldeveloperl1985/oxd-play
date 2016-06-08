@@ -1,7 +1,6 @@
 
 #oxd-play-client
 ----
----
 oxd-play-client is simple implementation of oxd-play library in playframe work.
 
 Application Setup
