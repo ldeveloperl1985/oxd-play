@@ -17,3 +17,23 @@ clone clinet project and run using activator with "-Dhttps.port=9005" option.
 ---
 
 There is GlobalData class in .Global package where you can change various parameters according to your configurations.
+
+
+##Tips:
+
+---
+
+set lighttpd config file to set your local proxity for www.myappplay.com name resolving.
+
+server.modules = (
+      "mod_access",
+      "mod_proxy",
+      "mod_accesslog"
+)
+
+
+$HTTP["host"] =~ "www.myappplay.com" {
+    proxy.balance = "round-robin" proxy.server = ( "/" =>
+        ( ( "host" => "you ip address", "port" => 9005 ) ) )
+}
+
