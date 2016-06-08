@@ -34,6 +34,6 @@ There is GlobalData class in .Global package where you can change various parame
 
     $HTTP["host"] =~ "www.myappplay.com" {
     proxy.balance = "round-robin" proxy.server = ( "/" =>
-        ( ( "host" => "you ip address", "port" => 9005 ) ) )
+        ( ( "host" => "your ip address", "port" => 9005 ) ) )
         }
 
