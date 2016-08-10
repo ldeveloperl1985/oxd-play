@@ -18,14 +18,13 @@ routesGenerator := InjectedRoutesGenerator
 resolvers += "Gluu repository" at "http://ox.gluu.org/maven"
 
 
-libraryDependencies += "org.xdi" % "oxd-java" % "2.4.3.Final"
-
-
-
-resolvers += "bintray" at "http://dl.bintray.com/meghna/maven"
-
-libraryDependencies += "oxd.play.java" % "oxd-play" % "1.0-FINAL"
+libraryDependencies += "org.xdi" % "oxd-client" % "2.4.4.Final"
 
 
 
 
+
+
+
+
+fork in run := true

@@ -43,6 +43,7 @@ public class Application extends Controller {
 
     public Result HomePage() {
 
+
         return ok(views.html.firstpage.render(getOxdid()));
     }
 
@@ -85,7 +86,6 @@ public class Application extends Controller {
     public Result RegisterSite() {
         DynamicForm form = formFactory.form().bindFromRequest();
         RegisterSiteParams params = new RegisterSiteParams();
-
 
         ArrayList<String> arcvalues = new ArrayList<>();
         if (form.get("oxd_openid_gplus_enable") != null && form.get("oxd_openid_gplus_enable").toString().equals("1")) {
@@ -131,6 +131,7 @@ public class Application extends Controller {
 
         params.setScope(scopes);
         params.setAcrValues(arcvalues);
+        params.setOpHost(GlobalData.opHost);
 
 
         if (form.get("email") != null) {
