@@ -14,4 +14,15 @@ dist
 /RUNNING_PID
 /.settings
 
-    
+
+/.oxd-license
+/.idea/
+/oxd-java.log.2016-07-19
+/.settings/
+/oxd-server.log.2016-07-20
+/oxd-server.log
+/.sbtserver/
+/.gitignore
+/oxd-java.log
+/cache.txt
+/oxd-java.log.2016-07-20
