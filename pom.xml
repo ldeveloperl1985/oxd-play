@@ -76,8 +76,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.12.4</version>
                 <configuration>
-                    <!-- skip client tests because right now we are using client tests on server side -->
-                    <skipTests>true</skipTests>
+                    <failIfNoTests>false</failIfNoTests>
+                    <trimStackTrace>false</trimStackTrace>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
             <plugin>
@@ -196,5 +199,7 @@
             <url>http://repo2.maven.org/maven2/org/bouncycastle</url>
         </repository>
     </repositories>
+
+    
 
 </project>
