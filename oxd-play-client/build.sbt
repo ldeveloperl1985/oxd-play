@@ -23,7 +23,7 @@ libraryDependencies += "org.xdi" % "oxd-client" % "2.4.4"
 
 
 
-libraryDependencies += "oxd.play.java" % "oxd-play" % "1.0-FINAL"
+libraryDependencies += "oxd.play.java" % "oxd-play" % "2.4.4-FINAL"
 
 
 
