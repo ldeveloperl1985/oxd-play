@@ -23,7 +23,7 @@ libraryDependencies += "org.xdi" % "oxd-java" % "2.4.3.Final"
 
 
 
-libraryDependencies += "oxd.play.java" % "oxd-play" % "1.0-FINAL"
+libraryDependencies += "oxd.play.java" % "oxd-play" % "2.4.3-FINAL"
 
 
 
