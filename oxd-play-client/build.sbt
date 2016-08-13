@@ -20,9 +20,6 @@ resolvers += "Gluu repository" at "http://ox.gluu.org/maven"
 libraryDependencies += "org.xdi" % "oxd-client" % "2.4.4"
 
 
-
-
-
 libraryDependencies += "oxd.play.java" % "oxd-play" % "2.4.4-FINAL"
 
 
